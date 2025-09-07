@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecobytes - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💚Ecobytes💚</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="facts.html">Facts</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="resources.html">Resources</a>
+      <a href="leaderboard.html">Leaderboard</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="section">
+      <h2>Quick Quiz</h2>
+      <div class="quiz-question">
+        <p><b>Q1:</b> Which gas is primarily responsible for global warming?</p>
+        <button onclick="checkAnswer(this, true)">Carbon Dioxide</button>
+        <button onclick="checkAnswer(this, false)">Oxygen</button>
+      </div>
+      <div class="quiz-question">
+        <p><b>Q2:</b> Which of these is a renewable source of energy?</p>
+        <button onclick="checkAnswer(this, true)">Solar Power</button>
+        <button onclick="checkAnswer(this, false)">Coal</button>
+      </div>
+      <span id="badge" class="badge">🏆 Eco Champion Badge Unlocked!</span>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 💚Ecobytes💚 | Designed for Green Education 🌱</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

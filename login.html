@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecobytes - Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💚Ecobytes💚</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="facts.html">Facts</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="resources.html">Resources</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="section auth-section">
+      <h2>Login / Sign Up</h2>
+      <div class="tabs">
+        <button id="login-tab" class="active" onclick="showForm('login')">Login</button>
+        <button id="signup-tab" onclick="showForm('signup')">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form">
+        <label>Email</label>
+        <input type="email" required>
+        <label>Password</label>
+        <input type="password" required>
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signup-form" class="auth-form hidden">
+        <label>Full Name</label>
+        <input type="text" required>
+        <label>Email</label>
+        <input type="email" required>
+        <label>Password</label>
+        <input type="password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 💚Ecobytes💚 | Designed for Green Education 🌱</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
